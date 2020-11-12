@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3177e6cb-7362-40db-94b1-964c1b401ad4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Client/ClientRealm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Color.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Entity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/File.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Game.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Globals.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Hook.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/JSON.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Net.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Panel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Realm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/SQL.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Surface.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Team.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/VGUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/Vector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gmod/VoidUI/Frame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Handlers/ConCommandAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Handlers/ConCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Handlers/HookAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Handlers/HookHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Character.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/MigrationVersion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Attributes/AutoIncrementAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Attributes/ColumnLengthAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Attributes/PrimaryKeyAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Attributes/TableAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Database.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/DatabaseConnectionResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/DatabaseCredentials.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/DatabaseMapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/DatabaseResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Migrations/Migration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Migrations/MigrationManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/ObjectMapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/QueryTypes/AlterQueryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/QueryTypes/CreateQueryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/QueryTypes/DeleteQueryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/QueryTypes/DropQueryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/QueryTypes/InsertQueryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/QueryTypes/QueryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/QueryTypes/SelectQueryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/QueryTypes/UpdateQueryType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/SerializerBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/SerializerMap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Serializers/BoolSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Serializers/ColorSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Serializers/DateTimeSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Serializers/IntegerSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Serializers/StringSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Specifiers/AlterSpecifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Specifiers/InsertSpecifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ORM/Specifiers/WhereSpecifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/CharacterManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/ServerConCommands.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/ServerRealm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utilities/Logger.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ORM/DatabaseConnectionResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/SerializerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/DatabaseCredentials.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/DatabaseMapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/DatabaseResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/ObjectMapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/SerializerMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/Vector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/Globals.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/Entity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/Panel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/Realm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/Database.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/Color.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/JSON.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/Team.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/Game.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/VoidUI/Frame.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gmod/SQL.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Models/MigrationVersion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/Attributes/ColumnLengthAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/Attributes/AutoIncrementAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Models/Character.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/Attributes/TableAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ORM/Attributes/PrimaryKeyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Gmod/VoidUI/Frame.cs" />
+        <option value="$PROJECT_DIR$/src/Program.cs" />
+        <option value="$PROJECT_DIR$/src/ORM/Database.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kCbwY9nCPlCsbOksItdxmjIKRg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3177e6cb-7362-40db-94b1-964c1b401ad4" name="Default Changelist" comment="" />
+      <created>1605207759915</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605207759915</updated>
+      <workItem from="1605207761558" duration="412000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
