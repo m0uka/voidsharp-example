@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using VoidAccessories.Handlers;
-using VoidAccessories.Networking;
+using VoidSharp.Handlers;
+using VoidSharp.Networking;
 using VoidAccessories.Utilities;
 using VoidAccessories.Models;
 using VoidSharp;

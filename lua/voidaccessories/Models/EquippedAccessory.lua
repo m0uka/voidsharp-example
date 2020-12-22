@@ -8,9 +8,9 @@ System.namespace("VoidAccessories.Models", function (namespace)
         return {
           properties = {
             { "AccessoryKey", 0x6, System.Int32 },
-            { "SteamId64", 0x6, System.String, out.VoidAccessories.ORM.Attributes.PrimaryKeyAttribute() }
+            { "SteamId64", 0x6, System.String, out.VoidSharp.ORM.Attributes.PrimaryKeyAttribute() }
           },
-          class = { 0x6, out.VoidAccessories.ORM.Attributes.TableAttribute("voidaccessories_equippedaccessories") }
+          class = { 0x6, out.VoidSharp.ORM.Attributes.TableAttribute("voidaccessories_equippedaccessories") }
         }
       end
     }

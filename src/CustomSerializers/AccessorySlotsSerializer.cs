@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using VoidAccessories.Accessories.Enums;
 using VoidAccessories.Objects;
-using VoidAccessories.ORM;
+using VoidSharp.ORM;
 using VoidSharp;
 
 namespace VoidAccessories.CustomSerializers

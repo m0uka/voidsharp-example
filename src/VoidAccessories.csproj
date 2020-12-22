@@ -7,4 +7,10 @@
     <RootNamespace>VoidAccessories</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="VoidSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\voidcsharp\src\obj\Debug\netcoreapp3.1\VoidSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

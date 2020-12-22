@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using VoidAccessories.Models;
-using VoidAccessories.ORM;
+using VoidSharp.ORM;
 using VoidAccessories.Utilities;
 
 namespace VoidAccessories.Configuration

@@ -15,13 +15,13 @@ System.namespace("VoidAccessories.Models", function (namespace)
             { "AllowClientOffsetEdit", 0x6, System.Boolean },
             { "Blacklist", 0x6, out.VoidAccessories.Objects.AccessoryModelBlacklist },
             { "Description", 0x6, System.String },
-            { "Id", 0x6, System.Int32, out.VoidAccessories.ORM.Attributes.PrimaryKeyAttribute(), out.VoidAccessories.ORM.Attributes.AutoIncrementAttribute() },
+            { "Id", 0x6, System.Int32, out.VoidSharp.ORM.Attributes.PrimaryKeyAttribute(), out.VoidSharp.ORM.Attributes.AutoIncrementAttribute() },
             { "Name", 0x6, System.String },
             { "Prices", 0x6, out.VoidAccessories.Objects.ItemPrices },
             { "SellInShop", 0x6, System.Boolean },
             { "Slots", 0x6, out.VoidAccessories.Objects.AccessorySlots }
           },
-          class = { 0x6, out.VoidAccessories.ORM.Attributes.TableAttribute("voidaccessories_items") }
+          class = { 0x6, out.VoidSharp.ORM.Attributes.TableAttribute("voidaccessories_items") }
         }
       end
     }

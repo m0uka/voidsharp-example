@@ -1,5 +1,5 @@
 ﻿using System;
-using VoidAccessories.ORM.Attributes;
+using VoidSharp.ORM.Attributes;
 
 namespace VoidAccessories.Models
 {

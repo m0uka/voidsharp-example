@@ -17,7 +17,7 @@ System.namespace("VoidAccessories.Models", function (namespace)
         return {
           properties = {
             { "Bone", 0x6, System.String },
-            { "Id", 0x6, System.String, out.VoidAccessories.ORM.Attributes.PrimaryKeyAttribute() },
+            { "Id", 0x6, System.String, out.VoidSharp.ORM.Attributes.PrimaryKeyAttribute() },
             { "Model", 0x6, System.String },
             { "RotateX", 0x6, System.Int32 },
             { "RotateY", 0x6, System.Int32 },
@@ -30,7 +30,7 @@ System.namespace("VoidAccessories.Models", function (namespace)
             { "TranslateZ", 0x6, System.Int32 },
             { "WorkshopId", 0x6, System.Int32 }
           },
-          class = { 0x6, out.VoidAccessories.ORM.Attributes.TableAttribute("voidaccessories_accessories") }
+          class = { 0x6, out.VoidSharp.ORM.Attributes.TableAttribute("voidaccessories_accessories") }
         }
       end
     }

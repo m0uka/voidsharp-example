@@ -16,11 +16,11 @@ System.namespace("VoidAccessories.Models", function (namespace)
           properties = {
             { "ExpireTime", 0x6, System.DateTime },
             { "IsTemporary", 0x6, System.Boolean },
-            { "ItemId", 0x6, System.Int32, out.VoidAccessories.ORM.Attributes.PrimaryKeyAttribute() },
+            { "ItemId", 0x6, System.Int32, out.VoidSharp.ORM.Attributes.PrimaryKeyAttribute() },
             { "PurchasedAt", 0x6, System.DateTime },
-            { "SteamId64", 0x6, System.String, out.VoidAccessories.ORM.Attributes.PrimaryKeyAttribute() }
+            { "SteamId64", 0x6, System.String, out.VoidSharp.ORM.Attributes.PrimaryKeyAttribute() }
           },
-          class = { 0x6, out.VoidAccessories.ORM.Attributes.TableAttribute("voidaccessories_inventories") }
+          class = { 0x6, out.VoidSharp.ORM.Attributes.TableAttribute("voidaccessories_inventories") }
         }
       end
     }

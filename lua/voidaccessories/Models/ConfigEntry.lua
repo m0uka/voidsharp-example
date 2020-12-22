@@ -6,10 +6,10 @@ System.namespace("VoidAccessories.Models", function (namespace)
       __metadata__ = function (out)
         return {
           properties = {
-            { "Key", 0x6, System.String, out.VoidAccessories.ORM.Attributes.PrimaryKeyAttribute(), out.VoidAccessories.ORM.Attributes.ColumnLengthAttribute(50) },
+            { "Key", 0x6, System.String, out.VoidSharp.ORM.Attributes.PrimaryKeyAttribute(), out.VoidSharp.ORM.Attributes.ColumnLengthAttribute(50) },
             { "Value", 0x6, System.Object }
           },
-          class = { 0x6, System.SerializableAttribute(), out.VoidAccessories.ORM.Attributes.TableAttribute("voidaccessories_config") }
+          class = { 0x6, System.SerializableAttribute(), out.VoidSharp.ORM.Attributes.TableAttribute("voidaccessories_config") }
         }
       end
     }

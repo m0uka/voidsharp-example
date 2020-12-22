@@ -64,10 +64,10 @@ System.namespace("VoidAccessories.Configuration", function (namespace)
       __metadata__ = function (out)
         return {
           methods = {
-            { "CreateEntries", 0x18E, CreateEntries, out.VoidAccessories.ORM.Database, System.Task },
+            { "CreateEntries", 0x18E, CreateEntries, out.VoidSharp.ORM.Database, System.Task },
             { "GetConfigProperties", 0x89, GetConfigProperties, System.Array(System.Reflection.PropertyInfo) },
-            { "InsertEntry", 0x289, InsertEntry, out.VoidAccessories.ORM.Database, System.Reflection.PropertyInfo, System.Task },
-            { "UpdateValue", 0x28E, UpdateValue, out.VoidAccessories.ORM.Database, System.Reflection.PropertyInfo, System.Task }
+            { "InsertEntry", 0x289, InsertEntry, out.VoidSharp.ORM.Database, System.Reflection.PropertyInfo, System.Task },
+            { "UpdateValue", 0x28E, UpdateValue, out.VoidSharp.ORM.Database, System.Reflection.PropertyInfo, System.Task }
           },
           class = { 0xE }
         }

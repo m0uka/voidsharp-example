@@ -1,6 +1,6 @@
 ﻿using VoidAccessories.Accessories.Enums;
 using VoidAccessories.Objects;
-using VoidAccessories.ORM.Attributes;
+using VoidSharp.ORM.Attributes;
 
 namespace VoidAccessories.Models
 {
