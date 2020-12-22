@@ -11,19 +11,22 @@ System.namespace("VoidSharp", function (namespace)
     -- Add a hook to be called upon the given event occurring.
     -- </summary>
     Add = function (name, id, hookCallback)
-      VoidSharp.Globals.getHook():Add(name, id, hookCallback)
+      local func = VoidSharp.Globals.getHook().Add
+      func(name, id, hookCallback)
     end
     -- <summary>
     -- Removes the hook with the supplied identifier from the given event.
     -- </summary>
     Remove = function (name, id)
-      VoidSharp.Globals.getHook():Remove(name, id)
+      local func = VoidSharp.Globals.getHook().Remove
+      func(name, id)
     end
     -- <summary>
     -- Calls hooks associated with the given event.
     -- </summary>
     Run = function (name, args)
-      VoidSharp.Globals.getHook():Run(name, args)
+      local func = VoidSharp.Globals.getHook().Run
+      func(name, args)
     end
     -- <summary>
     -- Returns a list of all the hooks registered with hook.Add.

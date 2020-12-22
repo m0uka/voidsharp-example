@@ -14,7 +14,7 @@ System.namespace("VoidSharp", function (namespace)
     -- </summary>
     GetAll = function ()
       local players = ListPlayer()
-      for _, player in System.each(VoidSharp.Globals.getPlayers()) do
+      for _, player in System.each(VoidSharp.Globals.getPlayers():GetAll()) do
         player = System.cast(System.Object, player)
         local ply = System.new(VoidSharp.Entity, 2, player)
         players:Add(System.cast(VoidSharp.Player, ply))

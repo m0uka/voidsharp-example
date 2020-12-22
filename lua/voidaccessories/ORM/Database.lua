@@ -2,6 +2,8 @@
 local System = System
 local SystemReflection = System.Reflection
 local VoidAccessories
+local VoidAccessoriesCustomSerializers
+local VoidAccessoriesObjects
 local VoidAccessoriesORM
 local VoidAccessoriesAttributes
 local VoidAccessoriesQueryTypes
@@ -11,6 +13,8 @@ local VoidSharp
 local VoidSharpDarkRP
 System.import(function (out)
   VoidAccessories = out.VoidAccessories
+  VoidAccessoriesCustomSerializers = VoidAccessories.CustomSerializers
+  VoidAccessoriesObjects = VoidAccessories.Objects
   VoidAccessoriesORM = VoidAccessories.ORM
   VoidAccessoriesAttributes = VoidAccessories.ORM.Attributes
   VoidAccessoriesQueryTypes = VoidAccessories.ORM.QueryTypes
@@ -74,6 +78,10 @@ System.namespace("VoidAccessories.ORM", function (namespace)
       VoidAccessoriesORM.SerializerMap.RegisterSerializer(System.Boolean, Serializers.BoolSerializer)
       VoidAccessoriesORM.SerializerMap.RegisterSerializer(VoidSharpDarkRP.Job, Serializers.JobSerializer)
       VoidAccessoriesORM.SerializerMap.RegisterSerializer(System.Object, Serializers.DynamicSerializer)
+
+      VoidAccessoriesORM.SerializerMap.RegisterSerializer(VoidAccessoriesObjects.ItemPrices, VoidAccessoriesCustomSerializers.ItemPricesSerializer)
+      VoidAccessoriesORM.SerializerMap.RegisterSerializer(VoidAccessoriesObjects.AccessorySlots, VoidAccessoriesCustomSerializers.AccessorySlotsSerializer)
+      VoidAccessoriesORM.SerializerMap.RegisterSerializer(VoidAccessoriesObjects.AccessoryModelBlacklist, VoidAccessoriesCustomSerializers.AccessoryModelBlacklistSerializer)
     end
     -- <summary>
     -- Creates all the tables from Models.
@@ -102,6 +110,7 @@ System.namespace("VoidAccessories.ORM", function (namespace)
     -- <returns>DatabaseResult</returns>
     Query = function (this, query, T)
       return System.async(function (async, this, query, T)
+        System.Console.WriteLine(query)
         local data = async:await(this.DatabaseDriver:Query(query))
         return VoidAccessoriesORM.DatabaseResult_1(T)(data)
       end, nil, this, query, T)

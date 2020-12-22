@@ -22,6 +22,9 @@ System.namespace("VoidAccessories.ORM.QueryTypes", function (namespace)
       default:AddKeyValue("Job", "VARCHAR(100)")
       default:AddKeyValue("Player", "VARCHAR(50)")
       default:AddKeyValue("Object", "TEXT")
+      default:AddKeyValue("AccessoryModelBlacklist", "TEXT")
+      default:AddKeyValue("AccessorySlots", "TEXT")
+      default:AddKeyValue("ItemPrices", "TEXT")
       this.CSharpTypesToSqlTypesDictionary = default
     end
     __ctor__ = function (this, database)

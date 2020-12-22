@@ -12,19 +12,22 @@ System.namespace("VoidSharp", function (namespace)
     -- Creates a panel by the specified classname.
     -- </summary>
     Create = function (className, parent, name)
-      return VoidSharp.Globals.getVGUI():Create(className, parent, name)
+      local func = VoidSharp.Globals.getVGUI().Create
+      return func(className, parent, name)
     end
     -- <summary>
     -- Registers a panel for later creation.
     -- </summary>
     Register = function (className, panelTable, baseName)
-      VoidSharp.Globals.getVGUI():Register(className, panelTable, baseName)
+      local func = VoidSharp.Globals.getVGUI().Register
+      func(className, panelTable, baseName)
     end
     -- <summary>
     -- Creates a panel from table.
     -- </summary>
     CreateFromTable = function (metatable, parent, name)
-      return VoidSharp.Globals.getVGUI():CreateFromTable(metatable, parent, name)
+      local func = VoidSharp.Globals.getVGUI().CreateFromTable
+      return func(metatable, parent, name)
     end
     -- <summary>
     -- Returns the global world panel which is the parent to all others, except for the HUD panel.

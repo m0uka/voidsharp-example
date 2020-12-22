@@ -13,7 +13,7 @@ System.namespace("VoidSharp.DarkRP", function (namespace)
   namespace.class("DarkRP", function (namespace)
     local GetJob, GetAllJobs, GetJobByCommand
     GetJob = function (team)
-      return VoidSharp.Globals.G.RPExtraTeams:get(team.Index)
+      return _G.RPExtraTeams:get(team.Index)
     end
     GetAllJobs = function ()
       local teams = VoidSharp.Team.GetAllTeams()

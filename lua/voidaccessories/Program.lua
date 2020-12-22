@@ -19,7 +19,7 @@ System.import(function (out)
 end)
 System.namespace("VoidAccessories", function (namespace)
   namespace.class("Program", function (namespace)
-    local Instance, Main, HandleException, Main1, LoadRealms, HandleAutoRefresh, OnInitialize, OnLanguagesLoaded, 
+    local Instance, Main, HandleException, Main1, LoadRealms, HandleAutoRefresh, OnVoidLibLoad, OnLanguagesLoaded, 
     class
     Main = function (args)
       Instance = class()
@@ -42,6 +42,10 @@ System.namespace("VoidAccessories", function (namespace)
         VoidAccessoriesUtilities.Logger.LogInfo("VoidAccessories Loaded!")
         VoidAccessoriesHandlers.HookHandler.InitializeHooks(this)
         VoidAccessoriesNetworking.DataSerializer.RegisterSerializers()
+
+        if VoidSharp.Globals.getVoidLib() ~= nil then
+          OnVoidLibLoad(this)
+        end
 
         async:await(LoadRealms(this))
       end, nil, this)
@@ -70,10 +74,10 @@ System.namespace("VoidAccessories", function (namespace)
       end)
     end
     -- <summary>
-    -- Gets called after all the addons are loaded.
+    -- Gets called after VoidLib is loaded.
     -- </summary>
-    OnInitialize = function (this)
-      VoidAccessoriesUtilities.Logger.LogInfo("Successfully initialized!")
+    OnVoidLibLoad = function (this)
+      VoidAccessoriesUtilities.Logger.LogInfo("VoidLib successfully loaded!")
 
       if VoidSharp.Realm.IsServer() then
         VoidSharp.VoidLib.RegisterAddon("VoidAccessories", 0, "{{ DEV_LICENSE }}")
@@ -89,7 +93,7 @@ System.namespace("VoidAccessories", function (namespace)
     class = {
       Main = Main,
       HandleAutoRefresh = HandleAutoRefresh,
-      OnInitialize = OnInitialize,
+      OnVoidLibLoad = OnVoidLibLoad,
       OnLanguagesLoaded = OnLanguagesLoaded,
       __metadata__ = function (out)
         return {
@@ -102,8 +106,8 @@ System.namespace("VoidAccessories", function (namespace)
             { "LoadRealms", 0x81, LoadRealms, System.Task },
             { "Main", 0x10E, Main, System.Array(System.String) },
             { "Main", 0x81, Main1, System.Task },
-            { "OnInitialize", 0x6, OnInitialize, out.VoidAccessories.Handlers.HookAttribute("Initialize", nil) },
-            { "OnLanguagesLoaded", 0x6, OnLanguagesLoaded, out.VoidAccessories.Handlers.HookAttribute("VoidAccessories.Lang.LanguagesLoaded", nil) }
+            { "OnLanguagesLoaded", 0x6, OnLanguagesLoaded, out.VoidAccessories.Handlers.HookAttribute("VoidAccessories.Lang.LanguagesLoaded", nil) },
+            { "OnVoidLibLoad", 0x6, OnVoidLibLoad, out.VoidAccessories.Handlers.HookAttribute("VoidLib.Loaded", nil) }
           },
           class = { 0x4 }
         }

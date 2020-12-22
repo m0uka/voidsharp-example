@@ -3,39 +3,39 @@ local System = System
 System.namespace("VoidSharp", function (namespace)
   namespace.class("Globals", function (namespace)
     local getGame, getEnts, getPlayers, getHook, getUtil, getSurface, getVGUI, getDarkRP, 
-    getConCommand, getTeam, ConsoleLog, AddConCommand, Error, class, static
-    static = function (this)
-      class.G = _G
-    end
+    getConCommand, getTeam, getVoidLib, ConsoleLog, AddConCommand, Error
     getGame = function ()
-      return class.G.game
+      return _G.game
     end
     getEnts = function ()
-      return class.G.ents
+      return _G.ents
     end
     getPlayers = function ()
-      return class.G.player
+      return _G.player
     end
     getHook = function ()
-      return class.G.hook
+      return _G.hook
     end
     getUtil = function ()
-      return class.G.util
+      return _G.util
     end
     getSurface = function ()
-      return class.G.surface
+      return _G.surface
     end
     getVGUI = function ()
-      return class.G.vgui
+      return _G.vgui
     end
     getDarkRP = function ()
-      return class.G.DarkRP
+      return _G.DarkRP
     end
     getConCommand = function ()
-      return class.G.concommand
+      return _G.concommand
     end
     getTeam = function ()
-      return class.G.team
+      return _G.team
+    end
+    getVoidLib = function ()
+      return _G.VoidLib
     end
     ConsoleLog = function (args)
       MsgC(unpack(args))
@@ -44,9 +44,9 @@ System.namespace("VoidSharp", function (namespace)
       getConCommand():Add(name, callback, autoComplete, helpText, flags)
     end
     Error = function (err)
-      class.G:error(err)
+      _G:error(err)
     end
-    class = {
+    return {
       getGame = getGame,
       getEnts = getEnts,
       getPlayers = getPlayers,
@@ -57,10 +57,10 @@ System.namespace("VoidSharp", function (namespace)
       getDarkRP = getDarkRP,
       getConCommand = getConCommand,
       getTeam = getTeam,
+      getVoidLib = getVoidLib,
       ConsoleLog = ConsoleLog,
       AddConCommand = AddConCommand,
       Error = Error,
-      static = static,
       __metadata__ = function (out)
         return {
           fields = {
@@ -76,7 +76,8 @@ System.namespace("VoidSharp", function (namespace)
             { "Surface", 0x20E, System.Object, getSurface },
             { "Team", 0x20E, System.Object, getTeam },
             { "Util", 0x20E, System.Object, getUtil },
-            { "VGUI", 0x20E, System.Object, getVGUI }
+            { "VGUI", 0x20E, System.Object, getVGUI },
+            { "VoidLib", 0x20E, System.Object, getVoidLib }
           },
           methods = {
             { "AddConCommand", 0x50E, AddConCommand, System.String, System.Delegate(out.VoidSharp.Player, System.String, System.Array(System.String), System.String, System.Void), System.Delegate(System.String, System.String, System.Void), System.String, System.Int32 },
@@ -87,6 +88,5 @@ System.namespace("VoidSharp", function (namespace)
         }
       end
     }
-    return class
   end)
 end)
