@@ -1,7 +1,10 @@
-﻿namespace VoidSharpTest.Models
+﻿using VoidSharp;
+
+namespace VoidSharpTest.Models
 {
-    public class NetworkData
+    public class ServerNetworkData
     {
-        
+        public Color Color { get; set; }
+        public string Name { get; set; }
     }
 }

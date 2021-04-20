@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using VoidSharp;
 
-namespace VoidAccessories.Utilities
+namespace VoidSharpTest.Utilities
 {
     public static class Logger
     {
@@ -12,7 +12,7 @@ namespace VoidAccessories.Utilities
         {
             var args = new List<dynamic>() {
                 new Color(87, 180, 242).ToGmodColor(),
-                "[VoidAccessories] ",
+                "[VoidSharpTest] ",
                 color != null ? color.ToGmodColor() : new Color(87, 180, 242).ToGmodColor(),
                 $"[{type}] ",
                 new Color(255, 255, 255).ToGmodColor(),

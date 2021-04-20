@@ -5,26 +5,24 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using VoidAccessories.Client;
 using VoidSharp.Handlers;
-using VoidAccessories.Localization;
 using VoidSharp.Networking;
-using VoidAccessories.Server;
-using VoidAccessories.Utilities;
-using VoidAccessories.Extensions;
 using VoidSharp;
-using VoidAccessories.Models;
+using VoidSharpTest.Models;
 using VoidSharp.ORM;
 using VoidSharp.ORM.Attributes;
 using VoidSharp.DarkRP;
+using VoidSharpTest.Client;
+using VoidSharpTest.Server;
+using VoidSharpTest.Utilities;
 
 /*
 [[
-    VoidAccessoriesAutoRefreshFunc()
+    VoidSharpTestAutoRefreshFunc()
 ]] 
 */
 
-namespace VoidAccessories
+namespace VoidSharpTest
 {
     class Program
     {
@@ -54,14 +52,9 @@ namespace VoidAccessories
 
         private async Task Main()
         {
-            Logger.LogInfo("VoidAccessories Loaded!");
+            Logger.LogInfo("VoidSharp Test Script Loaded!");
             HookHandler.InitializeHooks(this);
             DataSerializer.RegisterSerializers();
-            
-            if (Globals.VoidLib != null)
-            {
-                OnVoidLibLoad();
-            }
 
             await LoadRealms();
         }
@@ -97,27 +90,15 @@ namespace VoidAccessories
         }
 
         /// <summary>
-        /// Gets called after VoidLib is loaded.
+        /// Gets called after a player dies.
         /// </summary>
-        [Hook("VoidLib.Loaded")]
-        public void OnVoidLibLoad()
+        [Hook("PlayerDeath")]
+        public void OnPlayerDeath(dynamic gVictim, dynamic gInflictor, dynamic gAttacker)
         {
-            Logger.LogInfo("VoidLib successfully loaded!");
+            // The hook gets called with gmod entities, we need to make them VoidSharp entities
+            Player victim = (Player) new Entity(gVictim);
 
-            if (Realm.IsServer())
-            {
-                VoidLib.RegisterAddon("VoidAccessories", 0, "{{ DEV_LICENSE }}");
-            }
-        }
-
-        /// <summary>
-        /// Gets called after the VoidAccessories languages are loaded.
-        /// </summary>
-        [Hook("VoidAccessories.Lang.LanguagesLoaded")]
-        public void OnLanguagesLoaded()
-        {
-            Lang.LoadLanguages("VoidAccessories");
-            Logger.LogInfo($"Loaded {Lang.Languages.Count} languages!", "Languages");
+            Logger.LogInfo($"Player {victim.Nick} was killed!");
         }
 
     }

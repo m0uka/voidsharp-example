@@ -1,20 +1,20 @@
 ﻿using System;
+using VoidSharp;
 using VoidSharp.ORM.Attributes;
 
-namespace VoidAccessories.Models
+namespace VoidSharpTest.Models
 {
-    [Table("voidaccessories_inventories")]
+    [Table("voidsharptest_inventories")]
     public class InventoryItem
     {
         [PrimaryKey]
+        [AutoIncrement]
+        public int Id { get; set; }
+        
         public string SteamId64 { get; set; }
+        public string PlayerName { get; set; }
+        public Color PlayerColor { get; set; }
         
-        [PrimaryKey]
-        public int ItemId { get; set; }
-        
-        public DateTime PurchasedAt { get; set; }
-        
-        public bool IsTemporary { get; set; }
-        public DateTime ExpireTime { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 }

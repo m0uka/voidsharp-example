@@ -1,58 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\m0uka\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\m0uka\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_.19.00" t="ExcludeRecursive" />
-    <e p="C:\Users\m0uka\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
-    <e p="F:\gmod\garrysmod\addons\voidaccessories\src" t="IncludeRecursive">
-      <e p="Accessories" t="Include">
-        <e p="Enums" t="Include">
-          <e p="AccessorySlot.cs" t="Include" />
-          <e p="AccessoryType.cs" t="Include" />
-        </e>
-      </e>
-      <e p="bin" t="ExcludeRecursive" />
-      <e p="Client" t="Include">
-        <e p="ClientRealm.cs" t="Include" />
-      </e>
-      <e p="Configuration" t="Include">
-        <e p="Config.cs" t="Include" />
-        <e p="ConfigManager.cs" t="Include" />
-      </e>
-      <e p="CustomSerializers" t="Include">
-        <e p="AccessoryModelBlacklistSerializer.cs" t="Include" />
-        <e p="AccessorySlotsSerializer.cs" t="Include" />
-        <e p="ItemPricesSerializer.cs" t="Include" />
-      </e>
-      <e p="Extensions" t="Include">
-        <e p="StringExtensions.cs" t="Include" />
-      </e>
-      <e p="Localization" t="Include">
-        <e p="Lang.cs" t="Include" />
-        <e p="LanguageDict.cs" t="Include" />
-        <e p="PhraseManager.cs" t="Include" />
-      </e>
-      <e p="Models" t="Include">
-        <e p="AccessoryItem.cs" t="Include" />
-        <e p="ConfigEntry.cs" t="Include" />
-        <e p="EquippedAccessory.cs" t="Include" />
-        <e p="InventoryItem.cs" t="Include" />
-        <e p="VoidAccessory.cs" t="Include" />
-      </e>
-      <e p="obj" t="ExcludeRecursive" />
-      <e p="Objects" t="Include">
-        <e p="AccessoryModelBlacklist.cs" t="Include" />
-        <e p="AccessorySlots.cs" t="Include" />
-        <e p="ItemPrices.cs" t="Include" />
-      </e>
-      <e p="packages" t="ExcludeRecursive" />
-      <e p="Program.cs" t="Include" />
-      <e p="Server" t="Include">
-        <e p="ServerRealm.cs" t="Include" />
-      </e>
-      <e p="Utilities" t="Include">
-        <e p="Logger.cs" t="Include" />
-      </e>
+    <e p="C:\Users\m0uka\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\m0uka\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\m0uka\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="F:\gmod\garrysmod\addons\voidcsharp_test\src" t="IncludeRecursive">
       <e p="VoidAccessories.csproj" t="IncludeRecursive" />
     </e>
   </component>
